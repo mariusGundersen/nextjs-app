@@ -18,9 +18,11 @@ export default function Home({ data }: { data: { time: string } }) {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a> The time is
-          {" " + data.time}
+          Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
+
+        <p>The time is {" " + data.time}</p>
+        <a href="/about">About</a>
 
         <p className={styles.description}>
           Get started by editing{" "}
