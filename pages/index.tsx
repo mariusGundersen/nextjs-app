@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 import styles from "../styles/Home.module.css";
 
 export async function getServerSideProps() {
@@ -22,7 +23,7 @@ export default function Home({ data }: { data: { time: string } }) {
         </h1>
 
         <p>The time is {" " + data.time}</p>
-        <a href="/about">About</a>
+        <Link href="/about">About</Link>
 
         <p className={styles.description}>
           Get started by editing{" "}
